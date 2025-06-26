@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.User.EditProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editProfile"
+        android:background="@color/medium_lavender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_back"
+            android:layout_margin="10dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEditProfile"
+            android:text="Edit Profile"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageAvatar"
+        android:src="@drawable/background_image"
+        android:layout_below="@id/editProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        app:riv_corner_radius="60dp"
+        app:riv_border_width="2dp"
+        tools:ignore="ContentDescription" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddImage"
+        android:text="Add Image"
+        android:textSize="22sp"
+        android:backgroundTint="@color/mediumBlue"
+        android:layout_below="@id/imageAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:text="Username: "
+        android:textSize="24sp"
+        android:layout_below="@id/btnAddImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtUsername"
+        android:hint="Username"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/btnAddImage"
+        android:layout_toRightOf="@id/tvUsername"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail"
+        android:text="Email: "
+        android:textSize="24sp"
+        android:layout_below="@id/tvUsername"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/edtUsername"
+        android:layout_toRightOf="@id/tvUsername"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:text="Update"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/mediumBlue"
+        android:layout_below="@id/edtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

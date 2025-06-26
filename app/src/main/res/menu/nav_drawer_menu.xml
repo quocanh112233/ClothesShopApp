@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:checked="true"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/productManagement"
+            android:title="Product Management"
+            android:icon="@drawable/ic_product"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/orderManagement"
+            android:title="Order Management"
+            android:icon="@drawable/ic_order"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/categoryManagement"
+            android:title="Category Management"
+            android:icon="@drawable/ic_category"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/brandManagement"
+            android:title="Brand Management"
+            android:icon="@drawable/ic_brand"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/userManagement"
+            android:title="User Management"
+            android:icon="@drawable/ic_customer"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/couponManagement"
+            android:title="Coupon Management"
+            android:icon="@drawable/ic_coupon"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/bannerManagement"
+            android:title="Banner Management"
+            android:icon="@drawable/ic_banner"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/reviewManagement"
+            android:title="Review Management"
+            android:icon="@drawable/ic_review"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/feedbackManagement"
+            android:title="Feedback Management"
+            android:icon="@drawable/ic_feedback"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/rolesAndPermissions"
+            android:title="Roles And Permissions"
+            android:icon="@drawable/ic_user"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out"
+            android:icon="@drawable/ic_logout"
+            tools:ignore="HardcodedText" />
+    </group>
+</menu>
